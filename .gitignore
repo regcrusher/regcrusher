@@ -1,1 +1,6 @@
 sftp_config.json
+/.sass-cache/
+/bower_components/
+/node_modules/
+regcrusher.sublime-project
+regcrusher.sublime-workspace
