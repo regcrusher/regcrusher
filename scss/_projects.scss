@@ -1,0 +1,182 @@
+.jumbotron {
+	height: 500px;
+	overflow: hidden;
+	position: relative;
+	background-position: fixed;
+	&.project-edwardsharpe {
+		background: url('../img/projects/edwardsharpe-bg.jpg') 20% 0% ;
+		// background-size: 720px 720px;
+		color: white;
+
+		background-size: cover;
+		h1 {
+		 
+				color: white;
+				// background: rgba(#333,0.8);
+				// padding: 15px;
+				position: relative;
+				top: 50px;
+		}
+	}
+
+	&.project-energyhousecalls {
+		background: url('../img/projects/ehc-poster.jpg') 50% 50% ;
+		// background-size: 720px 720px;
+		color: white;
+
+		background-size: cover;
+		h1 {
+		 
+				color: white;
+				// background: rgba(#333,0.8);
+				// padding: 15px;
+				position: relative;
+				top: 50px;
+				text-shadow: 1px 2px 3px #333;
+		}
+	}
+
+	&.project-lessthanone {
+		background: url('../img/projects/lessthanone-poster.jpg') 50% 100% ;
+		// background-size: 720px 720px;
+		color: white;
+
+		background-size: cover;
+	}
+
+	&.project-apollo13 {
+		background: url('../img/projects/apollo13-poster.jpg') 50% 100% ;
+		// background-size: 720px 720px;
+		color: white;
+
+		background-size: cover;
+	}
+
+	&.project-theghostbelow {
+		background: url('../img/projects/theghostbelow-poster.jpg') 50% 100% ;
+		// background-size: 720px 720px;
+		color: #c6411d;
+
+		background-size: cover;
+	}
+
+	&.project-craftbeerexpress {
+		background: url('../img/projects/cbx-poster.jpg') 50% 50% ;
+		// background-size: 720px 720px;
+		color: #fcc114;
+
+		background-size: cover;
+	}
+
+	&.project-bayclub {
+		background: url('../img/projects/thebayclub-poster.jpg') 50% 50% ;
+		background-size: 1140px 473px;
+		color: #ffffff;
+ 		// color: #445C7E;
+ 		text-shadow: 1px 2px 3px #445C7E;
+ 		background-size: cover;
+ 	}
+
+ 	&.project-theroadhome {
+ 		background: url('../img/projects/theroadhome-poster.jpg') 50% 100% ;
+ 		background-size: 1200px 630px;
+ 		color: #0070CE;
+ 		// color: #445C7E;
+ 		text-shadow: 1px 2px 3px #ffffff;
+ 		background-size: cover;
+ 	}
+
+ 	&.project-craft {
+ 		background: url('../img/projects/craft-poster.jpg') 50% 100% ;
+ 		// background-size: 1200px 630px;
+ 		color: #ffffff;
+ 		// color: #445C7E;
+ 		// text-shadow: 1px 2px 3px #ffffff;
+ 		background-size: cover;
+ 	}
+
+ 	&.project-mcohenandsons {
+ 		background: url('../img/projects/mcohen-poster.jpg') 50% 100% ;
+ 		// background-size: 1200px 630px;
+ 		color: #ffffff;
+ 		// color: #445C7E;
+ 		text-shadow: 1px 0px 5px #111;
+ 		background-size: cover;
+
+ 		// h1 {
+ 		// 	color: #ececec;
+ 		// 	background: #434343;
+ 		// }
+ 	}
+ 	&.project-swirlholiday2013 {
+ 		background: url('../img/projects/swirlholiday-poster.jpg') 50% 100% ;
+ 		// background-size: 1200px 630px;
+ 		color: #ffffff;
+ 		// color: #445C7E;
+ 		text-shadow: 1px 0px 5px #111;
+ 		background-size: cover;
+
+ 		// h1 {
+ 		// 	color: #ececec;
+ 		// 	background: #434343;
+ 		// }
+ 	}
+
+
+ 	&.project-alfredangelo {
+ 		background: url('../img/projects/alfredangelo-poster.jpg') 50% 100% ;
+ 		// background-size: 1200px 630px;
+ 		color: #ffffff;
+ 		// color: #445C7E;
+ 		text-shadow: 1px 0px 5px #111;
+ 		background-size: cover;
+
+ 		h1 {
+ 			span {
+ 				color: #7796b2;
+ 				background: rgba(#333,0.8);
+ 				padding: 15px;
+ 			}
+ 		}
+ 	}
+
+ 	>img {
+ 		width: 100%;
+ 		position: absolute;
+ 		top: 0;
+ 		z-index: 10;
+
+ 	}
+
+ 	>.jumbotron-inner {
+ 		position: absolute;
+ 		top:0;
+ 		z-index: 20;
+ 	}
+
+ 	.jumbotron-content {
+
+		// position: absolute;
+		// bottom: 0;
+		position: relative;
+		h1 {
+			// position: ;
+			// position: absolute;
+			// top: 50%;
+			position: relative;
+			// top: 200px;
+
+		}
+	}
+	background-size: contain;
+}
+
+div.external {
+	margin: 0 0 15px;
+}
+
+.photos {
+	border-top: solid 1px $red;
+	margin-top: 30px;
+	padding-top: 30px;
+}

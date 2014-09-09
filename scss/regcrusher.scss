@@ -1,0 +1,346 @@
+@import "compass";
+@import "compass/css3/transition";
+@import "mixin";
+
+
+
+$white: #f8f8f8;
+$green: #800000;
+$red: #800000;
+$black: #333333;
+
+
+
+@import "keyframes";
+@import "projects";
+body {
+	background: $white;
+	color: $black;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	// @include transform(translateZ(0));
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	// font-family: 'Karla', sans-serif;
+	font-family: "league-gothic";
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 36px;
+	text-transform: uppercase;
+}
+
+a {
+	@include transition(color .1s ease-out);
+}
+
+
+#regcrusher_container {
+	margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+.tile {
+	position: relative;
+	margin-bottom: 30px;
+	overflow: hidden;
+	top:0;
+
+
+	img.project-thumb {
+		display: block;
+		position: absolute;
+		top: 0;
+
+		@include transition(all .5s ease-in-out);
+		@include transform(translateX(0%));
+
+		&.project-thumb-active {
+			@include transition(all 3s cubic-bezier(0.075, 0.820, 0.165, 1.000));
+
+			@include transform(scale(1.07));
+		}
+	}
+
+
+	.overlay {
+		width: 100%;
+		height: 100%;
+		background: rgba(#6CACE4, 0.45);
+		opacity:0;
+		position: absolute;
+		top: 0;
+		// @include transition(.2s opacity ease-out);
+		&.overlay-active, &.overlay-active-add {
+			opacity: 1;
+		}
+
+		display: block !important;
+
+		// display: table;
+	}
+
+
+
+	a {
+		text-decoration: none;
+	}
+
+	span.project-name {
+		width: 100%;
+		height: 100%;
+
+		padding: 20px;
+
+		color: white;
+		font-size:28px;
+		
+		text-transform: uppercase;
+
+		display: block;
+		line-height: 1em;
+
+		font-family: "alternate-gothic-no-2-d";
+		font-weight: 400;
+
+		// @include transition(0.25s transform ease-out);
+
+
+	}
+}
+
+
+span.red {
+	color: $red;
+}
+
+hr 	{
+	border-top: 1px solid #aaa;
+}
+
+
+#project {
+	position: relative;
+}
+
+.project-img {
+	margin-bottom: 30px;
+}
+
+.remove {
+	position: absolute;
+	right: 15px;
+	top: 0;
+	cursor: pointer;
+	a {
+		color: $black;
+		&:hover {
+			color: $black;			
+		}
+	}
+}
+
+footer {
+	position: fixed;
+	z-index: 10000;
+	bottom: 0;
+	width: 100%;
+	background: #800;
+	color: #ccc;
+	padding: 10px 0;
+	text-align: center;
+
+	ul.social {
+
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: inline;
+
+			margin-right: 10px;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+
+
+@media (max-width: 768px) {
+	#regcrusher_container {
+		&>.container {
+			.fullbleed {
+				padding-left: 0;
+				padding-right: 0;
+			}
+		}
+		&>.row {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		.col-xs-12.fullbleed {
+			padding-left: 0;
+			padding-right: 0;
+		}
+		
+	}
+
+	footer {
+		position: static;
+	}
+}
+
+::selection {
+	background: $green;
+	color: $white;
+}
+
+
+.page-container {
+	position: relative;
+}
+
+
+.page-home {
+	@include animation(fadein 0.45s both ease-in);
+		// display: block !important;
+	// z-index: 7777;
+}
+
+
+.page.ng-leave, .page.ng-leave-active { 
+	@include animation(slideOutLeft 0.45s both ease-in);
+	display: block !important;
+	// z-index: 7777;
+}
+
+.page.ng-enter, .page.ng-active { 
+	@include animation(fadein 0.45s both ease-in);
+	display: block !important;
+// 	position: absolute;
+// 	top: 0;
+	z-index: 8888;
+}
+
+
+.page-home.ng-leave, .page-home.ng-leave-active { 
+	@include animation(fadeout 0.45s both ease-in);
+	display: block !important;
+	z-index: 7777;
+}
+
+.page-home.ng-enter, .page-home.ng-active { 
+	@include animation(fadein 1.45s both ease-in);
+	display: block !important;
+// 	position: absolute;
+// 	top: 0;
+	z-index: 8888;
+}
+
+.page.page-project.ng-leave, .page.page-project.ng-leave-active { 
+	@include transition(fadeout 0.45s both ease-in);
+	display: block !important;
+	z-index: 7777;
+}
+
+.page.page-project.ng-enter, .page.page-project.ng-enter-active { 
+	@include transition(fadein 1.45s both ease-in); 
+	display: block !important;
+	// top: 0;
+	z-index: 8888;
+}
+
+// .page-project.ng-enter,
+// .page-project.ng-leave {
+//     -webkit-transition: all 1s ease;
+//     -moz-transition: all 1s ease;
+//     -o-transition: all 1s ease;
+//     transition: all 1s ease;
+// }
+.page {
+
+}
+
+.glyphicon {
+	margin-right: 10px;
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+// .tile, div.overlay, img.project-thumb {
+// 		width: 100%;
+// 		height: 100%;
+// 	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+// .tile, div.overlay, img.project-thumb {
+// 	width: 100%;
+// 		height: 100%;
+// 	}
+}
+
+@media only screen and (max-width : 768px) {
+	.tile {
+		img.project-thumb {
+			position: static;
+			@include transition(none);
+			&.project-thumb-active {
+				@include scale(1);
+			}
+		}
+		.overlay {
+			// opacity: 1;
+			// display: block;
+			width: 100%;
+			height: auto;
+			position: absolute;
+			bottom: 0;
+			top: auto;
+			display: none;
+			span.project-name { 
+				padding: 5px;
+			}
+		}
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.tile, div.overlay, img.project-thumb {
+		width: 345px;
+		height: 230px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.tile, div.overlay, img.project-thumb {
+		width: 293px;
+		height: 196px;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.tile, div.overlay, img.project-thumb {
+		width: 360px;
+		height: 240px;
+	}
+}

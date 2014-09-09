@@ -1,0 +1,48 @@
+<div class="page-container">
+
+
+	<div class="jumbotron project-{{project.key}}">
+		<!-- <img ng-src="/img/projects/{{project.poster}}" du-parallax y="speed1" alt="" /> -->
+		
+		<div class="container">
+			<div class="row">
+				<div class="jumbotron-inner">
+					<div class="col-md-6 col-sm-6">
+						<div class="jumbotron-content">
+							<h1 fade><span ng-bind-html="project.projectname"></span></h1>
+						</div><!-- end div.jumbotron-content -->
+					</div><!-- end div.col-md-12 -->
+					
+				</div><!-- end div.jumbotron-inner -->
+			</div><!-- end div.row -->
+		</div><!-- end div.container -->
+	</div><!-- end div.jumbotron -->
+	<div class="container fullbleed">
+
+
+
+		<div class="row">	
+			<div id="project" class="col-md-12">
+
+
+				<div class="external" ng-show="urlExists()">
+					<a href="{{project.url}}" analytics-on="click" analytics-category="Click" analytics-event="Visit {{project.projectname}}" target="_blank"><strong>Visit <span ng-bind-html="project.projectname"></span></strong></a>
+				</div><!-- end div.external -->
+
+				<div class="remove">
+					<a ng-href="#/home"><span class="glyphicon glyphicon-remove"></span></a>
+				</div><!-- end div.remove -->
+
+				<ng-include src="getPartial()"></ng-include>
+
+
+
+
+
+			</div><!-- end div.col-md-4 -->
+		</div><!-- end div.row -->
+
+
+
+	</div><!-- end div.col-md-6 col-sm-6 -->
+</div><!-- end div.row -->
