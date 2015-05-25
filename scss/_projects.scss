@@ -1,5 +1,5 @@
 .jumbotron {
-	height: 500px;
+	height: 200px;
 	overflow: hidden;
 	position: relative;
 	background-position: fixed;
@@ -10,34 +10,34 @@
 
 		background-size: cover;
 		h1 {
-		 
-				color: white;
+
+			color: white;
 				// background: rgba(#333,0.8);
 				// padding: 15px;
 				position: relative;
 				top: 50px;
+			}
 		}
-	}
 
-	&.project-energyhousecalls {
-		background: url('../img/projects/ehc-poster.jpg') 50% 50% ;
+		&.project-energyhousecalls {
+			background: url('../img/projects/ehc-poster.jpg') 50% 50% ;
 		// background-size: 720px 720px;
 		color: white;
 
 		background-size: cover;
 		h1 {
-		 
-				color: white;
+
+			color: white;
 				// background: rgba(#333,0.8);
 				// padding: 15px;
 				position: relative;
 				top: 50px;
 				text-shadow: 1px 2px 3px #333;
+			}
 		}
-	}
 
-	&.project-lessthanone {
-		background: url('../img/projects/lessthanone-poster.jpg') 50% 100% ;
+		&.project-lessthanone {
+			background: url('../img/projects/lessthanone-poster.jpg') 50% 100% ;
 		// background-size: 720px 720px;
 		color: white;
 
@@ -122,6 +122,20 @@
  		// }
  	}
 
+ 	&.project-redfordcenter {
+ 		background: url('../img/projects/redfordcenter-poster.jpg') 50% 100% ;
+ 		// background-size: 1200px 630px;
+ 		color: #ffffff;
+ 		// color: #445C7E;
+ 		text-shadow: 1px 0px 5px #111;
+ 		background-size: cover;
+
+ 		// h1 {
+ 		// 	color: #ececec;
+ 		// 	background: #434343;
+ 		// }
+ 	}
+
 
  	&.project-alfredangelo {
  		background: url('../img/projects/alfredangelo-poster.jpg') 50% 100% ;
@@ -179,4 +193,10 @@ div.external {
 	border-top: solid 1px $red;
 	margin-top: 30px;
 	padding-top: 30px;
+}
+
+@media only screen and (min-width : 768px) {
+	.jumbotron {
+		height: 500px;
+	}
 }

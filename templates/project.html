@@ -26,7 +26,10 @@
 
 
 				<div class="external" ng-show="urlExists()">
-					<a href="{{project.url}}" analytics-on="click" analytics-category="Click" analytics-event="Visit {{project.projectname}}" target="_blank"><strong>Visit <span ng-bind-html="project.projectname"></span></strong></a>
+					<p>
+						<i class="glyphicon glyphicon-globe"></i> <a href="{{project.url}}" analytics-on="click" analytics-category="Click" analytics-event="Visit {{project.projectname}}" target="_blank"><strong>Visit <span ng-bind-html="project.projectname"></span></strong></a>
+					</p>
+					
 				</div><!-- end div.external -->
 
 				<div class="remove">

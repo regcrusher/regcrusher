@@ -1,10 +1,10 @@
 <div class="page-container">
 
-	<div class="container fullbleed">
+	<div class="">
 
 
-		<div class="row">
-			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 fullbleed" ng-repeat="project in projects">
+		
+			<div class="tile-wrapper" ng-repeat="project in projects">
 				<div class="tile" ng-mouseenter="overlay = 'overlay overlay-active'; projectname = 'project-name active'; projectthumb = 'project-thumb project-thumb-active img-responsive'" ng-mouseleave="overlay = 'overlay'; projectname='project-name'; projectthumb = 'project-thumb img-responsive'">
 					<a ng-href="/#/project/{{project.key}}"> <img ng-src="{{project.thumb}}" alt="{{project.projectname}}" ng-class="projectthumb" class="project-thumb img-responsive" /></a>
 
@@ -16,6 +16,6 @@
 			
 			</div><!-- end div.col-md-4 col-sm-4 -->
 			<div class="clearfix visible-xs"></div><!-- end div.clearfix visible-xs -->
-		</div><!--end div.row-->
+		
 	</div>
 </div><!-- end div.page-container -->
