@@ -1,109 +1,91 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
-        bower_concat: {
-            all: {
-                dest: 'dist/js/bower.js',
-                exclude: ['animate.css'],
-                dependencies: {
-                    'underscore': 'jquery'
+        sass: { // Task
+            dev: { // Target
+                options: { // Target options
+                    style: 'expanded'
+                },
+                files: {
+                    "css/regcrusher.css": "scss/regcrusher.scss",
+                }
+            },
+            dist: { // Target
+                options: { // Target options
+                    style: 'compressed'
+                },
+                files: {
+                    "css/regcrusher.min.css": "scss/regcrusher.scss",
                 }
             }
         },
-
-        jshint: {
-            all: ['Gruntfile.js', 'js/regcrusher.js', 'js/controller.js']
-        },
-
-        uglify: {
-            build: {
-                files: [{
-                    'dist/js/functions.min.js': 'js/functions.js',
-                    'dist/js/directives.min.js': 'js/directives.js',
-                    'dist/js/regcrusher.min.js': 'js/regcrusher.js',
-                    'dist/js/controller.min.js': 'js/controller.js',
-                    'dist/js/bower.min.js': 'dist/js/bower.js'
-                }],
-
-
-                options: {
-
-
-                    mangle: true,
-                    beautify: false,
-                    sourceMap: true,
-                    compress: true
-                }
-            }
-        },
-
-        compass: {
+        postcss: {
+            options: {
+                map: {
+                    inline: false
+                },
+                processors: [
+                    require('autoprefixer-core')({
+                        browsers: ['last 2 versions']
+                    })
+                ]
+            },
             dist: {
-                options: {
-                    config: 'config.rb'
+                src: 'css/*.css'
+            }
+        },
+        jshint: {
+            files: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js'],
+            options: {
+                // options here to override JSHint defaults
+                globals: {
+                    jQuery: true,
+                    console: true,
+                    module: true,
+                    document: true,
+                    force: true
                 }
             }
         },
+        uglify: {
+            dev: {
+                files: {
+                    'js/regcrusher.min.js': ['js/regcrusher.js'],
+                },
+                options: {
+                    sourceMap: true,
+                    mangle: false,
+                }
+            },
 
-        // sass: {
-        //     dist: {
-        //         files: [{
-        //             expand: true,
-        //             cwd: 'scss',
-        //             src: ['*.scss'],
-        //             dest: 'css',
-        //             ext: '.css'
-        //         }],
-        //         sourcemap: true,
-        //         compass: true,
-
-
-        //     }
-        // },
-
-        imagemin: {
-            dynamic: {
-                files: [{
-                    expand: true,
-                    cwd: 'img/',
-                    src: ['*.{png,jpg,gif}'],
-                    dest: 'img/build/'
-                }]
-            }
         },
-
         watch: {
             scripts: {
-                files: ['js/*.js'],
-                tasks: ['jshint', 'uglify'],
+                files: ['js/src/*.js'],
+                tasks: ['jshint'],
                 options: {
-                    spawn: false,
+                    spawn: false
                 },
             },
-            css: {
-                files: ['scss/*.scss'],
-                tasks: ['compass'],
+            styles: {
+                files: ['scss/*.scss', /*'less/*.less',*/ /*'css/redford.css', 'css/redford.min.css'*/ ],
+                tasks: ['sass:dev', /*'less',*/ 'postcss'],
                 options: {
-                    spawn: false,
+                    spawn: true
                 }
-            }
-        }
-
+            },
+        },
     });
 
-    // grunt.loadNpmTasks('grunt-bower');
-    // grunt.loadNpmTasks('grunt-bower-concat');
-    // grunt.loadNpmTasks('grunt-contrib-uglify');
-    // grunt.loadNpmTasks('grunt-contrib-compass');
-    // grunt.loadNpmTasks('grunt-contrib-imagemin');
-    // grunt.loadNpmTasks('grunt-contrib-jshint');
-    // grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-postcss');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
+    grunt.loadNpmTasks('grunt-contrib-sass');
 
-    require('load-grunt-tasks')(grunt);
-
-    grunt.registerTask('default', ['jshint', 'uglify', 'compass', 'imagemin', 'watch']);
+    grunt.registerTask('default', ['jshint', 'uglify', 'sass', 'postcss', 'watch']);
 
 };

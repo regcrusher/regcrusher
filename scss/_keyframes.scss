@@ -12,28 +12,28 @@
 
 
 @include keyframes(slideInLeft) {
-	from 	{ @include transform(translateX(-100%)); }
-	to 		{ @include transform(translateX(0%)); }
+	from 	{ transform: (translateX(-100%)); }
+	to 		{ transform: (translateX(0%)); }
 }
 
 @include keyframes(slideOutLeft) {
-	from 	{ @include transform(translateX(0%)); }
-	to 		{ @include transform(translateX(-100%)); }
+	from 	{ transform: (translateX(0%)); }
+	to 		{ transform: (translateX(-100%)); }
 }
 
 
 
 @include keyframes(slideInRight) {
-	from 	{ @include transform(translateX(100%)); }
-	to 		{ @include transform(translateX(0%)); }
+	from 	{ transform: (translateX(100%)); }
+	to 		{ transform: (translateX(0%)); }
 }
 
 @include keyframes(slideOutRight) {
-	from 	{ @include transform(translateX(0%)); }
-	to 		{ @include transform(translateX(100%)); }
+	from 	{ transform: (translateX(0%)); }
+	to 		{ transform: (translateX(100%)); }
 }
 
 @include keyframes(slideup) {
-	from 	{ @include transform(translateY(5%)); opacity: 0 }
-	to 		{ @include transform(translateY(0%)); opacity: 1}
+	from 	{ transform: (translateY(5%)); opacity: 0 }
+	to 		{ transform: (translateY(0%)); opacity: 1}
 }
