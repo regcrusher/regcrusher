@@ -2,7 +2,15 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-
+        copy: {
+            default: {
+                expand: true,
+                flatten: true,
+                src: ['bower_components/bootstrap/dist/css/bootstrap.min.css', 'bower_components/font-awesome/css/font-awesome.min.css'],
+                dest: 'css/',
+                filter: 'isFile'
+            },
+        },
         sass: { // Task
             dev: { // Target
                 options: { // Target options
@@ -79,6 +87,7 @@ module.exports = function (grunt) {
         },
     });
 
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -86,6 +95,6 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-sass');
 
-    grunt.registerTask('default', ['jshint', 'uglify', 'sass', 'postcss', 'watch']);
+    grunt.registerTask('default', ['copy', 'jshint', 'uglify', 'sass', 'postcss', 'watch']);
 
 };
