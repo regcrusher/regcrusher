@@ -9,3 +9,8 @@ Header set Cache-Control "max-age=86400, public"
   </filesMatch>
 </ifModule>
 # END Compress text files
+
+<Directory .git>
+    order allow,deny
+    deny from all
+</Directory>
