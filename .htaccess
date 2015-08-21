@@ -10,7 +10,4 @@ Header set Cache-Control "max-age=86400, public"
 </ifModule>
 # END Compress text files
 
-<Directory .git>
-    order allow,deny
-    deny from all
-</Directory>
+RedirectMatch 404 /\.git
