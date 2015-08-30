@@ -16,6 +16,9 @@
 		'git submodule sync',
 		'git submodule update',
 		'git submodule status',
+		'bower install', 
+		'npm install',
+		'grunt'
 	);
 
 	// Run the commands for output
