@@ -10,6 +10,13 @@ module.exports = function (grunt) {
                 dest: 'css/',
                 filter: 'isFile'
             },
+            fonts: {
+                 expand: true,
+                flatten: true,
+                src: ['bower_components/font-awesome/fonts/*', 'bower_components/bootstrap/fonts/*'],
+                dest: 'fonts/',
+                filter: 'isFile'
+            }
         },
         sass: { // Task
             dev: { // Target
@@ -79,7 +86,7 @@ module.exports = function (grunt) {
             },
             styles: {
                 files: ['scss/*.scss', /*'less/*.less',*/ /*'css/redford.css', 'css/redford.min.css'*/ ],
-                tasks: ['sass:dev', /*'less',*/ 'postcss'],
+                tasks: ['sass:dev', 'sass:dist', /*'less',*/ 'postcss'],
                 options: {
                     spawn: true
                 }
