@@ -1,7 +1,14 @@
 {
     "projects": [
-
         {
+            "projectname": "The Walt Disney Family Museum",
+            "key": "walt-disney-family-museum",
+            "thumb": "/img/projects/wdfm-thumb.jpg",
+            "description": "",
+            "url": "http://www.waltdisney.org",
+            "html": "wdfm.html",
+            "poster": "wdfm-poster.jpg"
+        }, {
             "projectname": "The Redford Center",
             "key": "redfordcenter",
             "thumb": "/img/projects/redfordcenter-thumb.jpg",
@@ -9,7 +16,6 @@
             "url": "http://www.redfordcenter.org",
             "html": "redfordcenter.html",
             "poster": "redfordcenter-bg.jpg"
-
         }, {
             "projectname": "Edward Sharpe and the Magnetic Zeros",
             "key": "edwardsharpe",
@@ -51,14 +57,7 @@
             "url": "http://www.worldmarket.com/craft",
             "html": "craft.html",
             "poster": "craft-poster.jpg"
-        }, {
-            "projectname": "Swirl Holiday Card 2013",
-            "key": "swirlholiday2013",
-            "thumb": "/img/projects/swirlholiday-thumb.jpg",
-            "description": "",
-            "url": "",
-            "html": "swirlholiday.html",
-            "poster": "swirlholiday-poster.jpg"
+
         }, {
             "projectname": "The Bay Club",
             "key": "bayclub",

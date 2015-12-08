@@ -80,9 +80,9 @@
  	&.project-theroadhome {
  		background: url('../img/projects/theroadhome-poster.jpg') 50% 100% ;
  		background-size: 1200px 630px;
- 		color: #0070CE;
+ 		color: #fff;
  		// color: #445C7E;
- 		text-shadow: 1px 2px 3px #ffffff;
+ 		// text-shadow: 1px 2px 3px #ffffff;
  		background-size: cover;
  	}
 
@@ -112,6 +112,20 @@
  		background: url('../img/projects/swirlholiday-poster.jpg') 50% 100% ;
  		// background-size: 1200px 630px;
  		color: #ffffff;
+ 		// color: #445C7E;
+ 		text-shadow: 1px 0px 5px #111;
+ 		background-size: cover;
+
+ 		// h1 {
+ 		// 	color: #ececec;
+ 		// 	background: #434343;
+ 		// }
+ 	}
+
+ 	&.project-walt-disney-family-museum {
+ 		background: url('../img/projects/wdfm-poster.jpg') 50% 100% ;
+ 		// background-size: 1200px 630px;
+ 		color: #e86a23;
  		// color: #445C7E;
  		text-shadow: 1px 0px 5px #111;
  		background-size: cover;

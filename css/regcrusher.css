@@ -192,8 +192,7 @@
 .jumbotron.project-theroadhome {
   background: url("../img/projects/theroadhome-poster.jpg") 50% 100%;
   background-size: 1200px 630px;
-  color: #0070CE;
-  text-shadow: 1px 2px 3px #ffffff;
+  color: #fff;
   background-size: cover;
 }
 .jumbotron.project-craft {
@@ -210,6 +209,12 @@
 .jumbotron.project-swirlholiday2013 {
   background: url("../img/projects/swirlholiday-poster.jpg") 50% 100%;
   color: #ffffff;
+  text-shadow: 1px 0px 5px #111;
+  background-size: cover;
+}
+.jumbotron.project-walt-disney-family-museum {
+  background: url("../img/projects/wdfm-poster.jpg") 50% 100%;
+  color: #e86a23;
   text-shadow: 1px 0px 5px #111;
   background-size: cover;
 }
@@ -279,10 +284,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 36px;
   text-transform: uppercase;
-}
-
-#regcrusher_container {
-  margin-bottom: 100px;
 }
 
 .tile {
@@ -365,6 +366,7 @@ hr {
 }
 
 footer {
+  height: 62px;
   width: 100%;
   background: #800;
   color: #ccc;
