@@ -1,19 +1,13 @@
 // @import "compass";
 // @import "compass/css3/transition";
 @import "mixin";
-
-
-
 $white: #f8f8f8;
 $green: #800000;
 $red: #800000;
 $black: #333333;
-
-
-
-
 @import "keyframes";
 @import "projects";
+
 body {
 	background: $white;
 	color: $black;
@@ -23,8 +17,12 @@ body {
 	// @include transform(translateZ(0));
 }
 
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	// font-family: 'Karla', sans-serif;
 	font-family: "league-gothic";
 	font-weight: 400;
@@ -39,62 +37,45 @@ a {
 	// transition: (color .1s ease-out);
 }
 
-
 #regcrusher_container {
 	// margin-bottom: 100px;
 }
-
-
-
-
-
-
-
-
 
 .tile {
 	position: relative;
 	// margin-bottom: 30px;
 	overflow: hidden;
-	top:0;
-
+	top: 0;
 
 	img.project-thumb {
 		display: block;
 		// position: absolute;
 		// top: 0;
-
 		width: 100%;
-
 		transition: (all .5s ease-in-out);
 		transform: (translateX(0%));
 
 		&.project-thumb-active {
 			transition: (all 3s cubic-bezier(0.075, 0.820, 0.165, 1.000));
-
 			transform: (scale(1.07));
 		}
 	}
-
 
 	.overlay {
 		width: 100%;
 		height: 100%;
 		background: rgba(#6CACE4, 0.45);
-		opacity:0;
+		opacity: 0;
 		position: absolute;
 		top: 0;
 		// transition: (.2s opacity ease-out);
-		&.overlay-active, &.overlay-active-add {
+		&.overlay-active,
+		&.overlay-active-add {
 			opacity: 1;
 		}
-
 		display: block !important;
-
 		// display: table;
 	}
-
-
 
 	a {
 		text-decoration: none;
@@ -103,32 +84,23 @@ a {
 	span.project-name {
 		width: 100%;
 		height: 100%;
-
 		padding: 20px;
-
 		color: white;
-		font-size:28px;
-		
+		font-size: 28px;
 		text-transform: uppercase;
-
 		display: block;
 		line-height: 1em;
-
 		font-family: "alternate-gothic-no-2-d";
 		font-weight: 400;
-
 		// transition: (0.25s transform ease-out);
-
-
 	}
 }
-
 
 span.red {
 	color: $red;
 }
 
-hr 	{
+hr {
 	border-top: 1px solid #aaa;
 }
 
@@ -150,10 +122,12 @@ hr 	{
 	right: 15px;
 	top: 0;
 	cursor: pointer;
+
 	a {
 		color: $black;
+
 		&:hover {
-			color: $black;			
+			color: $black;
 		}
 	}
 }
@@ -170,23 +144,22 @@ footer {
 	text-align: center;
 
 	ul.social {
-
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 
 		li {
 			display: inline-block;
-
 			margin-right: 10px;
+
 			&:last-child {
 				margin-right: 0;
 			}
 
 			a {
 				color: $red;
+				transition: color 0.2s;
 
-				transition: color .2s;
 				&:hover {
 					color: $black;
 
@@ -197,34 +170,29 @@ footer {
 					.fa {
 						// color: $red;
 					}
-
 				}
 			}
 		}
 	}
 }
-
-
-
-
-
 @media (max-width: 768px) {
 	#regcrusher_container {
-		&>.container {
+		& > .container {
 			.fullbleed {
 				padding-left: 0;
 				padding-right: 0;
 			}
 		}
-		&>.row {
+
+		& > .row {
 			margin-left: 0;
 			margin-right: 0;
 		}
+
 		.col-xs-12.fullbleed {
 			padding-left: 0;
 			padding-right: 0;
 		}
-		
 	}
 
 	footer {
@@ -237,61 +205,60 @@ footer {
 	color: $white;
 }
 
-
 .page-container {
 	position: relative;
 }
 
-
 .page-home {
 	@include animation(fadein 0.45s both ease-in);
-		// display: block !important;
+	// display: block !important;
 	// z-index: 7777;
 }
 
-
-.page.ng-leave, .page.ng-leave-active { 
+.page.ng-leave,
+.page.ng-leave-active {
 	@include animation(slideOutLeft 0.45s both ease-in);
 	display: block !important;
 	// z-index: 7777;
 }
 
-.page.ng-enter, .page.ng-active { 
+.page.ng-active,
+.page.ng-enter {
 	@include animation(fadein 0.45s both ease-in);
-	display: block !important;
-// 	position: absolute;
-// 	top: 0;
-z-index: 8888;
+	display: block !important; // 	position: absolute;
+	// 	top: 0;
+	z-index: 8888;
 }
 
-
-.page-home.ng-leave, .page-home.ng-leave-active { 
+.page-home.ng-leave,
+.page-home.ng-leave-active {
 	@include animation(fadeout 0.45s both ease-in);
 	display: block !important;
 	z-index: 7777;
 }
 
-.page-home.ng-enter, .page-home.ng-active { 
+.page-home.ng-active,
+.page-home.ng-enter {
 	@include animation(fadein 1.45s both ease-in);
-	display: block !important;
-// 	position: absolute;
-// 	top: 0;
-z-index: 8888;
+	display: block !important; // 	position: absolute;
+	// 	top: 0;
+	z-index: 8888;
 }
 
-.page.page-project.ng-leave, .page.page-project.ng-leave-active { 
+.page.page-project.ng-leave,
+.page.page-project.ng-leave-active {
 	transition: (fadeout 0.45s both ease-in);
 	display: block !important;
 	z-index: 7777;
 }
 
-.page.page-project.ng-enter, .page.page-project.ng-enter-active { 
-	transition: (fadein 1.45s both ease-in); 
+.page.page-project.ng-enter,
+.page.page-project.ng-enter-active {
+	transition: (fadein 1.45s both ease-in);
 	display: block !important;
 	// top: 0;
 	z-index: 8888;
 }
-
 // .page-project.ng-enter,
 // .page-project.ng-leave {
 //     -webkit-transition: all 1s ease;
@@ -299,49 +266,46 @@ z-index: 8888;
 //     -o-transition: all 1s ease;
 //     transition: all 1s ease;
 // }
-.page {
 
-}
+.page {}
 
 .glyphicon {
 	margin-right: 10px;
 }
 
 .fa-circle {
-	color:$white;
+	color: $white;
 }
 
 .fa-inverse {
 	// color: $white;
 }
-
 /*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-// .tile, div.overlay, img.project-thumb {
-// 		width: 100%;
-// 		height: 100%;
-// 	}
+	// .tile, div.overlay, img.project-thumb {
+	// 		width: 100%;
+	// 		height: 100%;
+	// 	}
 }
-
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-// .tile, div.overlay, img.project-thumb {
-// 	width: 100%;
-// 		height: 100%;
-// 	}
+	// .tile, div.overlay, img.project-thumb {
+	// 	width: 100%;
+	// 		height: 100%;
+	// 	}
 }
-
 @media only screen and (max-width : 768px) {
 	.tile {
 		img.project-thumb {
 			position: static;
 			transition: (none);
+
 			&.project-thumb-active {
 				scale: 1.0;
 			}
 		}
+
 		.overlay {
 			// opacity: 1;
 			// display: block;
@@ -351,7 +315,8 @@ z-index: 8888;
 			bottom: 0;
 			top: auto;
 			display: none;
-			span.project-name { 
+
+			span.project-name {
 				padding: 5px;
 			}
 		}
@@ -363,14 +328,12 @@ z-index: 8888;
 		width: percentage(1/3);
 	}
 }
-
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 	.tile-wrapper {
 		width: percentage(1/3);
 	}
 }
-
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 	.tile-wrapper {

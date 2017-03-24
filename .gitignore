@@ -1,6 +1,8 @@
-sftp_config.json
-/.sass-cache/
-/bower_components/
-/node_modules/
-regcrusher.sublime-project
-regcrusher.sublime-workspace
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+test/unit/coverage
+test/e2e/reports
+selenium-debug.log

@@ -1,5 +1,4 @@
-{
-    "projects": [
+[
         {
             "projectname": "The Walt Disney Family Museum",
             "key": "walt-disney-family-museum",
@@ -100,4 +99,3 @@
             "poster": "cbx-poster.jpg"
         }
     ]
-}
