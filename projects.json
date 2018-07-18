@@ -1,103 +1,110 @@
 {
-    "projects": [
-        {
-            "projectname": "The Walt Disney Family Museum",
-            "key": "walt-disney-family-museum",
-            "thumb": "/img/projects/wdfm-thumb.jpg",
-            "description": "",
-            "url": "http://www.waltdisney.org",
-            "html": "wdfm.html",
-            "poster": "wdfm-poster.jpg"
-        }, {
-            "projectname": "The Redford Center",
-            "key": "redfordcenter",
-            "thumb": "/img/projects/redfordcenter-thumb.jpg",
-            "description": "",
-            "url": "http://www.redfordcenter.org",
-            "html": "redfordcenter.html",
-            "poster": "redfordcenter-bg.jpg"
-        }, {
-            "projectname": "Edward Sharpe and the Magnetic Zeros",
-            "key": "edwardsharpe",
-            "thumb": "/img/projects/edwardsharpe-thumb.jpg",
-            "description": "",
-            "url": "http://edwardsharpe.blogotheque.net",
-            "html": "edwardsharpe.html",
-            "poster": "edwardsharpe-bg.jpg"
-
-        }, {
-            "projectname": "Less Than One",
-            "key": "lessthanone",
-            "thumb": "/img/projects/lessthanone-thumb.jpg",
-            "description": "",
-            "url": "http://www.lessthanone.com",
-            "html": "lessthanone.html",
-            "poster": "lessthanone-poster.jpg"
-
-        }, {
-            "projectname": "A Pollo '13",
-            "key": "apollo13",
-            "thumb": "/img/projects/apollo13-thumb.jpg",
-            "description": "",
-            "url": "http://www.soyvay.com/awesomesauce",
-            "html": "apollo13.html",
-            "poster": "apollo13-poster.jpg"
-        }, {
-            "projectname": "The Ghost Below",
-            "key": "theghostbelow",
-            "thumb": "/img/projects/theghostbelow-thumb.jpg",
-            "description": "",
-            "url": "http://www.theghostbelow.org",
-            "html": "ghostbelow.html"
-        }, {
-            "projectname": "CRAFT by World Market",
-            "key": "craft",
-            "thumb": "/img/projects/craft-thumb.jpg",
-            "description": "",
-            "url": "http://www.worldmarket.com/craft",
-            "html": "craft.html",
-            "poster": "craft-poster.jpg"
-
-        }, {
-            "projectname": "The Bay Club",
-            "key": "bayclub",
-            "thumb": "/img/projects/thebayclub-thumb.jpg",
-            "description": "",
-            "url": "http://www.bayclubs.com",
-            "html": "bayclub.html",
-            "poster": "thebayclub-poster.jpg"
-        }, {
-            "projectname": "PG&E Energy House Calls",
-            "key": "energyhousecalls",
-            "thumb": "/img/projects/ehc-thumb.jpg",
-            "description": "",
-            "url": "http://www.energyhousecalls.com",
-            "html": "ehc.html",
-            "poster": "ehc-poster.jpg"
-
-        }, {
-            "projectname": "The Road Home &ndash; eBay Motors",
-            "key": "theroadhome",
-            "thumb": "/img/projects/theroadhome-thumb.jpg",
-            "description": "",
-            "url": "http://www.ebaytheroadhome.com",
-            "html": "theroadhome.html",
-            "poster": "theroadhome-poster.jpg"
-        }, {
-            "projectname": "Alfred Angelo",
-            "key": "alfredangelo",
-            "thumb": "/img/projects/alfredangelo-thumb.jpg",
-            "description": "",
-            "url": "http://www.alfredangelo.com",
-            "html": "alfredangelo.html"
-        }, {
-            "projectname": "Craft Beer Express",
-            "key": "craftbeerexpress",
-            "thumb": "/img/projects/cbx-thumb.jpg",
-            "description": "",
-            "url": "http://www.craftbeerexpress.com",
-            "html": "cbx.html",
-            "poster": "cbx-poster.jpg"
-        }
-    ]
+  "projects": [
+    {
+      "projectname": "The Walt Disney Family Museum",
+      "key": "walt-disney-family-museum",
+      "thumb": "/img/projects/wdfm-thumb.jpg",
+      "description": "",
+      "url": "http://www.waltdisney.org",
+      "html": "wdfm.html",
+      "poster": "wdfm-poster.jpg"
+    },
+    {
+      "projectname": "The Redford Center",
+      "key": "redfordcenter",
+      "thumb": "/img/projects/redfordcenter-thumb.jpg",
+      "description": "",
+      "url": "http://www.redfordcenter.org",
+      "html": "redfordcenter.html",
+      "poster": "redfordcenter-bg.jpg"
+    },
+    {
+      "projectname": "Edward Sharpe and the Magnetic Zeros",
+      "key": "edwardsharpe",
+      "thumb": "/img/projects/edwardsharpe-thumb.jpg",
+      "description": "",
+      "url": "http://edwardsharpe.blogotheque.net",
+      "html": "edwardsharpe.html",
+      "poster": "edwardsharpe-bg.jpg"
+    },
+    {
+      "projectname": "Less Than One",
+      "key": "lessthanone",
+      "thumb": "/img/projects/lessthanone-thumb.jpg",
+      "description": "",
+      "url": "http://www.lessthanone.com",
+      "html": "lessthanone.html",
+      "poster": "lessthanone-poster.jpg"
+    },
+    {
+      "projectname": "A Pollo '13",
+      "key": "apollo13",
+      "thumb": "/img/projects/apollo13-thumb.jpg",
+      "description": "",
+      "url": "http://www.soyvay.com/awesomesauce",
+      "html": "apollo13.html",
+      "poster": "apollo13-poster.jpg"
+    },
+    {
+      "projectname": "The Ghost Below",
+      "key": "theghostbelow",
+      "thumb": "/img/projects/theghostbelow-thumb.jpg",
+      "description": "",
+      "url": "http://www.theghostbelow.org",
+      "html": "ghostbelow.html"
+    },
+    {
+      "projectname": "CRAFT by World Market",
+      "key": "craft",
+      "thumb": "/img/projects/craft-thumb.jpg",
+      "description": "",
+      "url": "http://www.worldmarket.com/craft",
+      "html": "craft.html",
+      "poster": "craft-poster.jpg"
+    },
+    {
+      "projectname": "The Bay Club",
+      "key": "bayclub",
+      "thumb": "/img/projects/thebayclub-thumb.jpg",
+      "description": "",
+      "url": "http://www.bayclubs.com",
+      "html": "bayclub.html",
+      "poster": "thebayclub-poster.jpg"
+    },
+    {
+      "projectname": "PG&E Energy House Calls",
+      "key": "energyhousecalls",
+      "thumb": "/img/projects/ehc-thumb.jpg",
+      "description": "",
+      "url": "http://www.energyhousecalls.com",
+      "html": "ehc.html",
+      "poster": "ehc-poster.jpg"
+    },
+    {
+      "projectname": "The Road Home &ndash; eBay Motors",
+      "key": "theroadhome",
+      "thumb": "/img/projects/theroadhome-thumb.jpg",
+      "description": "",
+      "url": "http://www.ebaytheroadhome.com",
+      "html": "theroadhome.html",
+      "poster": "theroadhome-poster.jpg"
+    },
+    {
+      "projectname": "Alfred Angelo",
+      "key": "alfredangelo",
+      "thumb": "/img/projects/alfredangelo-thumb.jpg",
+      "description": "",
+      "url": "http://www.alfredangelo.com",
+      "html": "alfredangelo.html"
+    },
+    {
+      "projectname": "Craft Beer Express",
+      "key": "craftbeerexpress",
+      "thumb": "/img/projects/cbx-thumb.jpg",
+      "description": "",
+      "url": "http://www.craftbeerexpress.com",
+      "html": "cbx.html",
+      "poster": "cbx-poster.jpg"
+    }
+  ]
 }
