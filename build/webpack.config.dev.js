@@ -5,12 +5,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
+const autoprefixer = require('autoprefixer')
 
 function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
 module.exports = {
+  entry: ['./src/index.js', './assets/scss/app.scss'],
   mode: 'development',
   devServer: {
     hot: true,
@@ -25,8 +27,13 @@ module.exports = {
         use: 'vue-loader',
       },
       {
-        test: /\.css$/,
-        use: ['vue-style-loader', 'css-loader'],
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
+        ],
       },
       {
         test: /\.js$/,
@@ -50,7 +57,7 @@ module.exports = {
       },
     ]),
     new MiniCssExtractPlugin({
-      filename: 'main.css',
+      filename: 'style.css',
     }),
   ],
 }

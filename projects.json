@@ -1,6 +1,24 @@
 {
   "projects": [
     {
+      "projectname": "Delaware College of Art and Design",
+      "key": "dcad",
+      "thumb": "/img/projects/dcad.jpg",
+      "description": "",
+      "url": "http://www.dcad.edu",
+      "html": "dcad.html",
+      "poster": "dcad-poster.jpg"
+    },
+    {
+      "projectname": "ILC Dover",
+      "key": "ilc-dover",
+      "thumb": "/img/projects/ilc-dover-thumb.jpg",
+      "description": "",
+      "url": "http://www.ilcdover.com",
+      "html": "wdfm.html",
+      "poster": "wdfm-poster.jpg"
+    },
+    {
       "projectname": "The Walt Disney Family Museum",
       "key": "walt-disney-family-museum",
       "thumb": "/img/projects/wdfm-thumb.jpg",
