@@ -26,7 +26,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	// font-family: 'Karla', sans-serif;
-	font-family: "league-gothic";
+	font-family: 'Fjalla One', sans-serif;
 	font-weight: 400;
 }
 
@@ -108,13 +108,13 @@ a {
 
 		color: white;
 		font-size:28px;
-		
+
 		text-transform: uppercase;
 
 		display: block;
 		line-height: 1em;
 
-		font-family: "alternate-gothic-no-2-d";
+		font-family: 'Fjalla One', sans-serif;
 		font-weight: 400;
 
 		// transition: (0.25s transform ease-out);
@@ -153,7 +153,7 @@ hr 	{
 	a {
 		color: $black;
 		&:hover {
-			color: $black;			
+			color: $black;
 		}
 	}
 }
@@ -224,7 +224,7 @@ footer {
 			padding-left: 0;
 			padding-right: 0;
 		}
-		
+
 	}
 
 	footer {
@@ -250,13 +250,13 @@ footer {
 }
 
 
-.page.ng-leave, .page.ng-leave-active { 
+.page.ng-leave, .page.ng-leave-active {
 	@include animation(slideOutLeft 0.45s both ease-in);
 	display: block !important;
 	// z-index: 7777;
 }
 
-.page.ng-enter, .page.ng-active { 
+.page.ng-enter, .page.ng-active {
 	@include animation(fadein 0.45s both ease-in);
 	display: block !important;
 // 	position: absolute;
@@ -265,13 +265,13 @@ z-index: 8888;
 }
 
 
-.page-home.ng-leave, .page-home.ng-leave-active { 
+.page-home.ng-leave, .page-home.ng-leave-active {
 	@include animation(fadeout 0.45s both ease-in);
 	display: block !important;
 	z-index: 7777;
 }
 
-.page-home.ng-enter, .page-home.ng-active { 
+.page-home.ng-enter, .page-home.ng-active {
 	@include animation(fadein 1.45s both ease-in);
 	display: block !important;
 // 	position: absolute;
@@ -279,14 +279,14 @@ z-index: 8888;
 z-index: 8888;
 }
 
-.page.page-project.ng-leave, .page.page-project.ng-leave-active { 
+.page.page-project.ng-leave, .page.page-project.ng-leave-active {
 	transition: (fadeout 0.45s both ease-in);
 	display: block !important;
 	z-index: 7777;
 }
 
-.page.page-project.ng-enter, .page.page-project.ng-enter-active { 
-	transition: (fadein 1.45s both ease-in); 
+.page.page-project.ng-enter, .page.page-project.ng-enter-active {
+	transition: (fadein 1.45s both ease-in);
 	display: block !important;
 	// top: 0;
 	z-index: 8888;
@@ -317,7 +317,7 @@ z-index: 8888;
 
 /*==========  Mobile First Method  ==========*/
 
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 // .tile, div.overlay, img.project-thumb {
 // 		width: 100%;
@@ -325,7 +325,7 @@ z-index: 8888;
 // 	}
 }
 
-/* Extra Small Devices, Phones */ 
+/* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
 // .tile, div.overlay, img.project-thumb {
 // 	width: 100%;
@@ -351,7 +351,7 @@ z-index: 8888;
 			bottom: 0;
 			top: auto;
 			display: none;
-			span.project-name { 
+			span.project-name {
 				padding: 5px;
 			}
 		}
