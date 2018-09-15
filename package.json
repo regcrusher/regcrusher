@@ -19,6 +19,7 @@
     "postcss": "^4.1.16"
   },
   "dependencies": {
+    "autoprefixer-core": "^6.0.1",
     "grunt-bower": "^0.13.4"
   }
 }
