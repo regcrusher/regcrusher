@@ -4,3 +4,4 @@ sftp_config.json
 /node_modules/
 regcrusher.sublime-project
 regcrusher.sublime-workspace
+.cache/
